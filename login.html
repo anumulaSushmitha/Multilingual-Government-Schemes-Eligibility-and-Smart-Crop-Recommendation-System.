@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body{
+font-family:Arial;
+background:linear-gradient(#a5d6a7,#fff8e1);
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+.card{
+background:white;
+padding:40px;
+border-radius:10px;
+box-shadow:0px 5px 10px grey;
+width:300px;
+}
+
+input{
+width:100%;
+padding:10px;
+margin:10px 0;
+}
+
+button{
+background:#2e7d32;
+color:white;
+padding:10px;
+border:none;
+width:100%;
+margin-top:10px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<h2>🌾 Farmer Portal</h2>
+<p style="color:red">{{message}}</p>
+
+<form method="POST">
+
+<input name="username" placeholder="Username">
+
+<input type="password" name="password" placeholder="Password">
+
+<button name="action" value="login">Login</button>
+
+<button name="action" value="register">Register</button>
+
+</form>
+
+</div>
+
+</body>
+</html>

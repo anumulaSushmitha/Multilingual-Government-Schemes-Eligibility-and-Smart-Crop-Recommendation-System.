@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<style>
+
+body{
+font-family:Arial;
+background:#e8f5e9;
+padding:40px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 6px 15px rgba(0,0,0,0.2);
+width:500px;
+margin:auto;
+}
+
+h2{
+text-align:center;
+color:#1b5e20;
+}
+
+label{
+font-weight:bold;
+}
+
+input{
+width:100%;
+padding:10px;
+margin:8px 0;
+border-radius:6px;
+border:1px solid #ccc;
+}
+
+button{
+background:#1b5e20;
+color:white;
+padding:12px;
+border:none;
+border-radius:6px;
+width:100%;
+font-size:16px;
+margin-top:10px;
+}
+
+button:hover{
+background:#2e7d32;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<h2>{{labels.title}}</h2>
+
+<form action="/check_scheme" method="POST" enctype="multipart/form-data">
+
+<label>{{labels.name}}</label>
+<input type="text" name="name" required>
+
+<label>{{labels.age}}</label>
+<input type="number" name="age" required>
+
+<label>{{labels.income}}</label>
+<input type="number" name="income" required>
+
+<label>{{labels.land}}</label>
+<input type="number" name="land" required>
+
+<label>{{labels.aadhaar}}</label>
+<input type="file" name="aadhaar" required>
+
+<button>{{labels.button}}</button>
+
+</form>
+
+</div>
+
+</body>
+</html>

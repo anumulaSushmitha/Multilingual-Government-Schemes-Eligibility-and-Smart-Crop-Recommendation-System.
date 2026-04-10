@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:#f1f8e9;
+}
+
+.sidebar{
+position:fixed;
+width:220px;
+height:100%;
+background:#2e7d32;
+color:white;
+}
+
+.sidebar h2{
+text-align:center;
+padding:20px;
+}
+
+.sidebar a{
+display:block;
+padding:15px;
+color:white;
+text-decoration:none;
+}
+
+.sidebar a:hover{
+background:#66bb6a;
+}
+
+.main{
+margin-left:220px;
+padding:20px;
+}
+
+</style>
+
+<body>
+
+<div class="sidebar">
+
+<h2>{{t.title}}</h2>
+
+<a href="/crop">{{t.crop}}</a>
+<a href="/scheme">{{t.scheme}}</a>
+<a href="/queries">{{t.queries}}</a>
+
+<br>
+
+<a href="/set_lang/en">English</a>
+<a href="/set_lang/te">తెలుగు</a>
+<a href="/set_lang/hi">हिन्दी</a>
+
+</div>
+
+<div class="main">
+
+<h1>Welcome Farmer</h1>
+
+</div>
+
+</body>
+</html>

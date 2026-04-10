@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+
+body{
+font-family:Arial;
+background:#f9fbe7;
+padding:40px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+width:500px;
+margin:auto;
+}
+
+input{
+width:100%;
+padding:10px;
+border-radius:6px;
+border:1px solid #ccc;
+}
+
+button{
+background:#33691e;
+color:white;
+padding:10px;
+border:none;
+border-radius:6px;
+margin-top:10px;
+width:100%;
+}
+
+h2{
+text-align:center;
+color:#33691e;
+}
+
+</style>
+
+<body>
+
+<div class="card">
+
+<h2>Farmer Queries</h2>
+
+<form action="/ask" method="POST">
+
+<input name="question" placeholder="Ask your farming question">
+
+<button>Ask</button>
+
+</form>
+
+<h3 style="color:green;text-align:center">{{answer}}</h3>
+
+</div>
+
+</body>
+</html>

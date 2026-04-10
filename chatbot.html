@@ -1,0 +1,19 @@
+link rel="stylesheet" href="/static/style.css">
+
+<h2>Farmer Chatbot</h2>
+
+<form action="/ask" method="post">
+
+Ask your question
+
+<input name="question">
+
+<button>Ask</button>
+
+</form>
+
+{% if answer %}
+
+<p>Answer: {{answer}}</p>
+
+{% endif %}
